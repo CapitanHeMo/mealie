@@ -79,13 +79,13 @@ services:
       # SMTP_USER=
       # SMTP_PASSWORD=
 
-  # postgres:
-  #   container_name: postgres
-  #   image: postgres
-  #   restart: always
-  #   environment:
-  #     POSTGRES_PASSWORD: mealie
-  #     POSTGRES_USER: mealie
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mealie
+      POSTGRES_USER: mealie
 
 volumes:
   mealie-data:
